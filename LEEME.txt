@@ -1,0 +1,37 @@
+DEMO ESTÁTICA — Buses San Bartolomé
+====================================
+
+Esta carpeta es una copia exacta de cómo se ve el sitio en WordPress,
+exportada como páginas estáticas para mostrarla como demostración.
+
+Diferencias con el WordPress real:
+- El botón "Enviar solicitud" muestra un aviso de demo (no guarda nada).
+- El botón "Enviar por WhatsApp" SÍ funciona (abre WhatsApp con el mensaje).
+- No hay panel de administración: eso existe solo en la versión WordPress.
+- Google no la indexa (noindex), para que no compita con el sitio real.
+- La etiqueta "Propuesta de diseño · Demo" se oculta poniendo
+  MOSTRAR_ETIQUETA = false en demo/demo.js.
+
+VERLA EN TU COMPUTADOR
+----------------------
+Descomprime el zip y abre index.html con doble clic. Funciona sin internet
+(salvo el mapa de Google y WhatsApp).
+
+SUBIR A VERCEL
+--------------
+IMPORTANTE: sube el CONTENIDO de esta carpeta (donde está index.html),
+no una carpeta que la contenga.
+
+Opción A — desde la terminal (la más rápida):
+  1. Instala Node.js (nodejs.org) si no lo tienes.
+  2. Abre una terminal dentro de esta carpeta y escribe:
+        npx vercel
+     Inicia sesión cuando lo pida y acepta las opciones por defecto.
+  3. Para dejarla en la dirección definitiva:
+        npx vercel --prod
+
+Opción B — con GitHub (sin terminal):
+  1. Crea un repositorio nuevo en github.com.
+  2. "Add file" → "Upload files" → arrastra TODO el contenido de esta carpeta.
+  3. En vercel.com → "Add New…" → "Project" → importa ese repositorio.
+     Framework: "Other". No hay comando de build. Pulsa Deploy.

@@ -1,0 +1,15 @@
+/* Solo para la versión demo */
+.demo-badge {
+	position: fixed; left: 16px; bottom: 16px; z-index: 90;
+	display: inline-flex; align-items: center; gap: 8px;
+	padding: 7px 8px 6px 12px; border-radius: 999px;
+	background: rgba(20, 21, 23, .92); color: #f2ecdf;
+	border: 1px solid rgba(255, 255, 255, .14);
+	font: 700 .66rem/1 "SB Mono", ui-monospace, monospace; letter-spacing: .14em; text-transform: uppercase;
+	box-shadow: 0 10px 24px -10px rgba(0, 0, 0, .6);
+	-webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.demo-badge__dot { width: 7px; height: 7px; border-radius: 50%; background: #ffc61a; box-shadow: 0 0 8px #ffc61a; }
+.demo-badge button { width: 22px; height: 22px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, .1); color: inherit; font: 400 15px/1 sans-serif; cursor: pointer; }
+.demo-badge button:hover { background: #ffc61a; color: #141517; }
+@media (max-width: 600px) { .demo-badge { bottom: 22px; font-size: .58rem; } }
